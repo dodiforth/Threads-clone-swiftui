@@ -12,6 +12,7 @@ struct RegistrationView: View {
     @State private var password: String = ""
     @State private var fullname: String = ""
     @State private var username: String = ""
+    @Environment (\.dismiss) var dismiss
 
     let iconWidth = 120.0
     let iconHeight = 120.0
@@ -57,7 +58,7 @@ struct RegistrationView: View {
             Divider()
             
             Button {
-                
+                dismiss()
             } label: {
                 HStack(spacing: 3){
                     Text("Already have an account?")
