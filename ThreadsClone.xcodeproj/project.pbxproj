@@ -15,6 +15,11 @@
 		3BF468012BAF1FA400184505 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF468002BAF1FA400184505 /* RegistrationView.swift */; };
 		3BF468042BAF24DB00184505 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF468032BAF24DB00184505 /* ThreadsTextFieldModifier.swift */; };
 		3BF468072BAF2CBB00184505 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF468062BAF2CBB00184505 /* ThreadsTabView.swift */; };
+		3BF4680B2BAF33F800184505 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4680A2BAF33F800184505 /* FeedView.swift */; };
+		3BF4680F2BAF346D00184505 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4680E2BAF346D00184505 /* ExploreView.swift */; };
+		3BF468132BAF34B200184505 /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF468122BAF34B200184505 /* CreateThreadView.swift */; };
+		3BF468172BAF34EC00184505 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF468162BAF34EC00184505 /* ActivityView.swift */; };
+		3BF4681B2BAF350A00184505 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4681A2BAF350A00184505 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		3BF468002BAF1FA400184505 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		3BF468032BAF24DB00184505 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		3BF468062BAF2CBB00184505 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
+		3BF4680A2BAF33F800184505 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		3BF4680E2BAF346D00184505 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		3BF468122BAF34B200184505 /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
+		3BF468162BAF34EC00184505 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		3BF4681A2BAF350A00184505 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +100,14 @@
 		3BF467F62BADFF6400184505 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3BF468142BAF34D500184505 /* Activity */,
 				3BF467FB2BAE056800184505 /* Authentication */,
+				3BF4680C2BAF345900184505 /* Explore */,
+				3BF468082BAF33E400184505 /* Feed */,
+				3BF468182BAF34FB00184505 /* Profile */,
 				3BF467FC2BAE057400184505 /* Root */,
 				3BF468052BAF2C8100184505 /* TabBar */,
+				3BF468102BAF349A00184505 /* ThreadCreation */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -167,6 +182,86 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		3BF468082BAF33E400184505 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				3BF468092BAF33EB00184505 /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		3BF468092BAF33EB00184505 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF4680A2BAF33F800184505 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF4680C2BAF345900184505 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				3BF4680D2BAF345F00184505 /* View */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		3BF4680D2BAF345F00184505 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF4680E2BAF346D00184505 /* ExploreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF468102BAF349A00184505 /* ThreadCreation */ = {
+			isa = PBXGroup;
+			children = (
+				3BF468112BAF34A700184505 /* View */,
+			);
+			path = ThreadCreation;
+			sourceTree = "<group>";
+		};
+		3BF468112BAF34A700184505 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF468122BAF34B200184505 /* CreateThreadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF468142BAF34D500184505 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				3BF468152BAF34DB00184505 /* View */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		3BF468152BAF34DB00184505 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF468162BAF34EC00184505 /* ActivityView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF468182BAF34FB00184505 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3BF468192BAF350200184505 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3BF468192BAF350200184505 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF4681A2BAF350A00184505 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,11 +332,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF4680B2BAF33F800184505 /* FeedView.swift in Sources */,
 				3BF467FF2BAE05B700184505 /* LoginView.swift in Sources */,
 				3BF467E52BAD8CBF00184505 /* ContentView.swift in Sources */,
+				3BF468172BAF34EC00184505 /* ActivityView.swift in Sources */,
+				3BF468132BAF34B200184505 /* CreateThreadView.swift in Sources */,
 				3BF468072BAF2CBB00184505 /* ThreadsTabView.swift in Sources */,
 				3BF468042BAF24DB00184505 /* ThreadsTextFieldModifier.swift in Sources */,
 				3BF467E32BAD8CBF00184505 /* ThreadsCloneApp.swift in Sources */,
+				3BF4680F2BAF346D00184505 /* ExploreView.swift in Sources */,
+				3BF4681B2BAF350A00184505 /* ProfileView.swift in Sources */,
 				3BF468012BAF1FA400184505 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

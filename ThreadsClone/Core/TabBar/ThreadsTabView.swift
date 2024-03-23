@@ -13,7 +13,7 @@ struct ThreadsTabView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            Text("Feed View")
+            FeedView()
                 .tabItem {
                     Image(systemName: selectedTab == 0 ? "house.fill" : "house").environment(\.symbolVariants, selectedTab == 0 ? .fill : .none)
                 }
@@ -22,7 +22,7 @@ struct ThreadsTabView: View {
                 }
                 .tag(0)
             
-            Text("Explore").tabItem {
+            ExploreView().tabItem {
                 Image(systemName: "magnifyingglass")
             }
             .onAppear {
@@ -30,21 +30,21 @@ struct ThreadsTabView: View {
             }
             .tag(1)
             
-            Text("Upload Thread").tabItem {
+            CreateThreadView().tabItem {
                 Image(systemName: "plus")
             }.onAppear {
                 selectedTab = 2
             }
             .tag(2)
             
-            Text("Activity").tabItem {
+           ActivityView().tabItem {
                 Image(systemName: selectedTab == 3 ? "heart.fill" : "heart").environment(\.symbolVariants, selectedTab == 3 ? .fill : .none)
             }.onAppear {
                 selectedTab = 3
             }
             .tag(3)
             
-            Text("Explore").tabItem {
+            ProfileView().tabItem {
                 Image(systemName: selectedTab == 4 ? "person.fill" : "person").environment(\.symbolVariants, selectedTab == 4 ? .fill : .none)
             }.onAppear {
                 selectedTab = 4
