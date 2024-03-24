@@ -20,6 +20,7 @@
 		3BF468132BAF34B200184505 /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF468122BAF34B200184505 /* CreateThreadView.swift */; };
 		3BF468172BAF34EC00184505 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF468162BAF34EC00184505 /* ActivityView.swift */; };
 		3BF4681B2BAF350A00184505 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4681A2BAF350A00184505 /* ProfileView.swift */; };
+		3BF4681D2BAF471B00184505 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4681C2BAF471B00184505 /* ThreadCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		3BF468122BAF34B200184505 /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 		3BF468162BAF34EC00184505 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		3BF4681A2BAF350A00184505 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3BF4681C2BAF471B00184505 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				3BF4680A2BAF33F800184505 /* FeedView.swift */,
+				3BF4681C2BAF471B00184505 /* ThreadCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				3BF4680B2BAF33F800184505 /* FeedView.swift in Sources */,
 				3BF467FF2BAE05B700184505 /* LoginView.swift in Sources */,
 				3BF467E52BAD8CBF00184505 /* ContentView.swift in Sources */,
+				3BF4681D2BAF471B00184505 /* ThreadCell.swift in Sources */,
 				3BF468172BAF34EC00184505 /* ActivityView.swift in Sources */,
 				3BF468132BAF34B200184505 /* CreateThreadView.swift in Sources */,
 				3BF468072BAF2CBB00184505 /* ThreadsTabView.swift in Sources */,
