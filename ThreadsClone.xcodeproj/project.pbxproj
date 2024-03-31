@@ -12,6 +12,8 @@
 		3BDE95132BB9FE9B005DDD6A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95122BB9FE9B005DDD6A /* FirebaseFirestore */; };
 		3BDE95152BB9FE9B005DDD6A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95142BB9FE9B005DDD6A /* FirebaseFirestoreSwift */; };
 		3BDE95172BB9FE9B005DDD6A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95162BB9FE9B005DDD6A /* FirebaseStorage */; };
+		3BDE951B2BBA1599005DDD6A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE951A2BBA1599005DDD6A /* RegistrationViewModel.swift */; };
+		3BDE951D2BBA1714005DDD6A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE951C2BBA1714005DDD6A /* AuthService.swift */; };
 		3BF467E32BAD8CBF00184505 /* ThreadsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF467E22BAD8CBF00184505 /* ThreadsCloneApp.swift */; };
 		3BF467E52BAD8CBF00184505 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF467E42BAD8CBF00184505 /* ContentView.swift */; };
 		3BF467E72BAD8CC000184505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF467E62BAD8CC000184505 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BDE951A2BBA1599005DDD6A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		3BDE951C2BBA1714005DDD6A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3BF467DF2BAD8CBF00184505 /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF467E22BAD8CBF00184505 /* ThreadsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneApp.swift; sourceTree = "<group>"; };
 		3BF467E42BAD8CBF00184505 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BDE95182BBA155D005DDD6A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BDE951A2BBA1599005DDD6A /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BDE95192BBA1569005DDD6A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3BDE951C2BBA1714005DDD6A /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		3BF467D62BAD8CBF00184505 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +186,8 @@
 		3BF467FB2BAE056800184505 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				3BDE95192BBA1569005DDD6A /* Service */,
+				3BDE95182BBA155D005DDD6A /* ViewModel */,
 				3BF467FD2BAE059E00184505 /* Views */,
 			);
 			path = Authentication;
@@ -401,7 +423,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF4680B2BAF33F800184505 /* FeedView.swift in Sources */,
+				3BDE951B2BBA1599005DDD6A /* RegistrationViewModel.swift in Sources */,
 				3BF467FF2BAE05B700184505 /* LoginView.swift in Sources */,
+				3BDE951D2BBA1714005DDD6A /* AuthService.swift in Sources */,
 				3BFF9DED2BB173D000AC007F /* EditProfileView.swift in Sources */,
 				3BF467E52BAD8CBF00184505 /* ContentView.swift in Sources */,
 				3BF4681D2BAF471B00184505 /* ThreadCell.swift in Sources */,
