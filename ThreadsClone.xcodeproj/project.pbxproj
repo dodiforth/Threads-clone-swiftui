@@ -316,9 +316,9 @@
 		3BF468182BAF34FB00184505 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3BF468192BAF350200184505 /* View */,
 				3BFF9DEA2BB173A900AC007F /* EditProfile */,
 				3BFF9DE72BB15F0500AC007F /* Model */,
-				3BF468192BAF350200184505 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
