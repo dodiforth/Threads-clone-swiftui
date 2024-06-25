@@ -16,7 +16,7 @@ class RegistrationViewModel: ObservableObject {
     @MainActor
     func createUser() async throws {
         try await AuthService.shared.createUser(
-            email: email,
+            withEmail: email,
             password: password,
             fullname: fullname,
             username: username)
