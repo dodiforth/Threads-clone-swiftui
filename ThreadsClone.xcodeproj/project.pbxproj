@@ -94,13 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B3C0E3A2C2AB59F0016CA66 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		3B3C0E3D2C2C83910016CA66 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,20 +380,19 @@
 			children = (
 				3B3C0E472C2C94A70016CA66 /* Components */,
 				3B3C0E422C2C908E0016CA66 /* CurrentUserProfile */,
-				3BFF9DE72BB15F0500AC007F /* Model */,
-				3BF468192BAF350200184505 /* View */,
-				3B3C0E3A2C2AB59F0016CA66 /* ViewModel */,
 				3BFF9DEA2BB173A900AC007F /* EditProfile */,
+				3BF468192BAF350200184505 /* UserProfile */,
+				3BFF9DE72BB15F0500AC007F /* Model */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		3BF468192BAF350200184505 /* View */ = {
+		3BF468192BAF350200184505 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
 				3BF4681A2BAF350A00184505 /* ProfileView.swift */,
 			);
-			path = View;
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		3BFF9DE22BB0A8FF00AC007F /* Components */ = {

@@ -23,13 +23,17 @@ struct CurrentUserProfileView: View {
                     Button{
                         
                     } label: {
-                        Text("Follow")
+                        Text("Edit Profile")
                             .font(.subheadline)
                             .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .frame(width: 362, height: 32)
-                            .background(.black)
+                            .foregroundColor(.black)
+                            .frame(width: 352, height: 32)
+                            .background(.white)
                             .cornerRadius(8)
+                            .overlay {
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color(.systemGray4), lineWidth: 1)
+                            }
                     }
                     
                     // user content list view

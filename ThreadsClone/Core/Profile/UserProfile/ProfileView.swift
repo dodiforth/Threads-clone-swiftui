@@ -25,7 +25,7 @@ struct ProfileView: View {
                             .font(.subheadline)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
-                            .frame(width: 362, height: 32)
+                            .frame(width: 352, height: 32)
                             .background(.black)
                             .cornerRadius(8)
                     }
@@ -34,16 +34,7 @@ struct ProfileView: View {
                     UserContentListView()
                 
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button{
-                        AuthService.shared.signOut()
-                    } label: {
-                        Image(systemName: "line.3.horizontal")
-                            .foregroundColor(.black)
-                    }
-                }
-            }
+            .navigationBarTitleDisplayMode(.inline)
             .padding(.horizontal)
             
         }
