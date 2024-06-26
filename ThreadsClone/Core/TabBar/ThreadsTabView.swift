@@ -45,7 +45,7 @@ struct ThreadsTabView: View {
             }
             .tag(3)
             
-            ProfileView().tabItem {
+            CurrentUserProfileView().tabItem {
                 Image(systemName: selectedTab == 4 ? "person.fill" : "person").environment(\.symbolVariants, selectedTab == 4 ? .fill : .none)
             }.onAppear {
                 selectedTab = 4
