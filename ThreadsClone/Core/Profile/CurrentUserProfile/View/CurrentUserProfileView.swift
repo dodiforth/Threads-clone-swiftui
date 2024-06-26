@@ -25,31 +25,7 @@ struct CurrentUserProfileView: View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 20) {
-                    HStack(alignment: .top) {
-                        // bio and stats
-                        VStack(alignment: .leading, spacing: 12) {
-                            // fullname and username
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(currentUser?.fullname ?? "")
-                                    .font(.title2)
-                                    .fontWeight(.semibold)
-                                Text(currentUser?.username ?? "")
-                                    .font(.subheadline)
-                            }
-                            
-                            if let bio = currentUser?.bio {
-                                Text(bio)
-                                    .font(.footnote)
-                            }
-                            Text("2 followers")
-                                .font(.caption)
-                                .foregroundColor(.gray)
-                            
-                        }
-                        Spacer()
-                        
-                        CircularProfileImageView()
-                    }
+                    ProfileHeaderView(user: currentUser)
                     
                     Button{
                         
