@@ -9,14 +9,15 @@ import SwiftUI
 
 struct ExploreView: View {
     @State private var searchText = ""
+    @StateObject var viewModel = ExploreViewModel()
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(0 ... 10, id: \.self) { user in
+                    ForEach(viewModel.users) { user in
                         VStack {
-                            UserCell()
+                            UserCell(user: user)
                                 .padding(.horizontal)
                             Divider()
                         }
@@ -30,24 +31,6 @@ struct ExploreView: View {
         
     }
 }
-
-// struct SearchBar: View {
-//     @Binding var text: String
-
-//     var body: some View {
-//         HStack {
-//             HStack {
-//                 Image(systemName: "magnifyingglass")
-//                     .foregroundColor(.gray)
-//                 TextField("Search", text: $text)
-//             }
-//                 .padding(8)
-//                 .background(Color(.systemGray6))
-//                 .cornerRadius(8)
-//                 .padding(.horizontal, 16)
-//         }
-//     }
-// }
 
 struct ExploreView_Previews: PreviewProvider {
     static var previews: some View {
