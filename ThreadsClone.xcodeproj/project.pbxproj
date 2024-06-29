@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133BDC67304DE896862C2B7D /* Pods_ThreadsClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC2184E0584BF6ACE0B6B596 /* Pods_ThreadsClone.framework */; };
 		3B3C0E372C2AACD50016CA66 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C0E362C2AACD50016CA66 /* User.swift */; };
 		3B3C0E392C2AB3940016CA66 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C0E382C2AB3940016CA66 /* UserService.swift */; };
 		3B3C0E3C2C2AB5BC0016CA66 /* CurrentUserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C0E3B2C2AB5BC0016CA66 /* CurrentUserProfileViewModel.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33AFF784C5DBF3FF01904A40 /* Pods-ThreadsClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadsClone.debug.xcconfig"; path = "Target Support Files/Pods-ThreadsClone/Pods-ThreadsClone.debug.xcconfig"; sourceTree = "<group>"; };
 		3B3C0E362C2AACD50016CA66 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3B3C0E382C2AB3940016CA66 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		3B3C0E3B2C2AB5BC0016CA66 /* CurrentUserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileViewModel.swift; sourceTree = "<group>"; };
@@ -81,6 +83,8 @@
 		3BFF9DE52BB0AAA000AC007F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		3BFF9DE82BB15F2B00AC007F /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		3BFF9DEC2BB173D000AC007F /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		D07D199BE413FF75DC0A7611 /* Pods-ThreadsClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadsClone.release.xcconfig"; path = "Target Support Files/Pods-ThreadsClone/Pods-ThreadsClone.release.xcconfig"; sourceTree = "<group>"; };
+		EC2184E0584BF6ACE0B6B596 /* Pods_ThreadsClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreadsClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				3BDE95172BB9FE9B005DDD6A /* FirebaseStorage in Frameworks */,
 				3BDE95132BB9FE9B005DDD6A /* FirebaseFirestore in Frameworks */,
 				3BDE95152BB9FE9B005DDD6A /* FirebaseFirestoreSwift in Frameworks */,
+				133BDC67304DE896862C2B7D /* Pods_ThreadsClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +191,8 @@
 			children = (
 				3BF467E12BAD8CBF00184505 /* ThreadsClone */,
 				3BF467E02BAD8CBF00184505 /* Products */,
+				AA44E3E11CCCA1E086C37A7B /* Pods */,
+				E4F931EF7F58D2D0A1F0EF41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -442,6 +449,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		AA44E3E11CCCA1E086C37A7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33AFF784C5DBF3FF01904A40 /* Pods-ThreadsClone.debug.xcconfig */,
+				D07D199BE413FF75DC0A7611 /* Pods-ThreadsClone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4F931EF7F58D2D0A1F0EF41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC2184E0584BF6ACE0B6B596 /* Pods_ThreadsClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -449,9 +473,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF467ED2BAD8CC000184505 /* Build configuration list for PBXNativeTarget "ThreadsClone" */;
 			buildPhases = (
+				F44BCCDFB8B701F1661ED76D /* [CP] Check Pods Manifest.lock */,
 				3BF467DB2BAD8CBF00184505 /* Sources */,
 				3BF467DC2BAD8CBF00184505 /* Frameworks */,
 				3BF467DD2BAD8CBF00184505 /* Resources */,
+				3250680559DF16BD131EB826 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -516,6 +542,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3250680559DF16BD131EB826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreadsClone/Pods-ThreadsClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreadsClone/Pods-ThreadsClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreadsClone/Pods-ThreadsClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F44BCCDFB8B701F1661ED76D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThreadsClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BF467DB2BAD8CBF00184505 /* Sources */ = {
@@ -679,6 +747,7 @@
 		};
 		3BF467EE2BAD8CC000184505 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33AFF784C5DBF3FF01904A40 /* Pods-ThreadsClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -687,6 +756,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ThreadsClone/Preview Content\"";
 				DEVELOPMENT_TEAM = NGA2X6V298;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -708,6 +778,7 @@
 		};
 		3BF467EF2BAD8CC000184505 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07D199BE413FF75DC0A7611 /* Pods-ThreadsClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -716,6 +787,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ThreadsClone/Preview Content\"";
 				DEVELOPMENT_TEAM = NGA2X6V298;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
