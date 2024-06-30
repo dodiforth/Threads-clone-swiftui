@@ -27,6 +27,8 @@ struct CreateThreadView: View {
                             .fontWeight(.semibold)
                         TextField("Start a thread...", text: $caption, axis: .vertical)
                             .font(.footnote)
+                            .autocorrectionDisabled()
+                            
                     }
                     .font(.footnote)
                     
