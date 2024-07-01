@@ -57,10 +57,30 @@ extension ThreadService {
     }
     
     static func unlikeThread(_ thread: Thread) async throws {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let threadRef = FirestoreConstants.ThreadCollection.document(thread.id)
+        
+        async let _ = try await threadRef
+            .collection("thread-likes")
+            .document(uid)
+            .delete()
+        // Fetch the latest thread data to check the current number of likes
+        let snapshot = try await threadRef.getDocument()
+        if let data = snapshot.data(), let likes = data["likes"] as? Int, likes > 0 {
+            async let _ = try await threadRef.updateData(["likes": likes - 1])
+        }
+        
+        async let _ = try await FirestoreConstants.UserCollection.document(uid).collection("user-likes").document(thread.id).delete()
         
     }
     
     static func checkIfUserLikedThread(_ thread: Thread) async throws -> Bool {
-        return false
+        guard let uid = Auth.auth().currentUser?.uid else { return false }
+        let userLikesRef = FirestoreConstants.UserCollection.document(uid)
+            .collection("user-likes")
+            .document(thread.id)
+        
+        let document = try await userLikesRef.getDocument()
+        return document.exists
     }
 }

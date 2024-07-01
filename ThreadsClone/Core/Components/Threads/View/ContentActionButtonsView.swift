@@ -18,10 +18,14 @@ struct ContentActionButtonsView: View {
         return viewModel.thread.didLike ?? false
     }
     
+    private var thread: Thread {
+        return viewModel.thread
+    }
+    
     func handleLikeTapped() {
         Task {
             if didLike {
-                viewModel.unlikeThread()
+                try await viewModel.unlikeThread()
             } else {
                 try await viewModel.likeThread()
             }
@@ -29,27 +33,36 @@ struct ContentActionButtonsView: View {
     }
     
     var body: some View {
-        HStack(spacing: 16){
-            Button {
-                handleLikeTapped()
-            } label: {
-                Image(systemName: didLike ? "heart.fill" : "heart")
-                    .foregroundColor(didLike ? .red : .black)
+        VStack(alignment: .leading) {
+            HStack(spacing: 16){
+                Button {
+                    handleLikeTapped()
+                } label: {
+                    Image(systemName: didLike ? "heart.fill" : "heart")
+                        .foregroundColor(didLike ? .red : .black)
+                }
+                Button {
+                    
+                } label: {
+                    Image(systemName: "bubble.right")
+                }
+                Button {
+                    
+                } label: {
+                    Image(systemName: "arrow.rectanglepath")
+                }
+                Button {
+                    
+                } label: {
+                    Image(systemName: "paperplane")
+                }
             }
-            Button {
-                
-            } label: {
-                Image(systemName: "bubble.right")
-            }
-            Button {
-                
-            } label: {
-                Image(systemName: "arrow.rectanglepath")
-            }
-            Button {
-                
-            } label: {
-                Image(systemName: "paperplane")
+            
+            if thread.likes > 0 {
+                Text("\(thread.likes) likes")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                    .padding(.vertical, 4)
             }
         }
     }
