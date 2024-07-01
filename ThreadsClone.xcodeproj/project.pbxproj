@@ -25,6 +25,7 @@
 		3B92A1072C321C70007F29FC /* UserContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1062C321C70007F29FC /* UserContentListViewModel.swift */; };
 		3B92A1092C32A247007F29FC /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1082C32A247007F29FC /* Timestamp.swift */; };
 		3B92A10D2C32C044007F29FC /* ContentActionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A10C2C32C044007F29FC /* ContentActionButtonsView.swift */; };
+		3B92A1112C32C38D007F29FC /* ContentActionButtonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1102C32C38D007F29FC /* ContentActionButtonsViewModel.swift */; };
 		3BDE950E2BB9FCDF005DDD6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */; };
 		3BDE95112BB9FE9B005DDD6A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95102BB9FE9B005DDD6A /* FirebaseAuth */; };
 		3BDE95132BB9FE9B005DDD6A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95122BB9FE9B005DDD6A /* FirebaseFirestore */; };
@@ -73,6 +74,8 @@
 		3B92A1062C321C70007F29FC /* UserContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListViewModel.swift; sourceTree = "<group>"; };
 		3B92A1082C32A247007F29FC /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
 		3B92A10C2C32C044007F29FC /* ContentActionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonsView.swift; sourceTree = "<group>"; };
+		3B92A1102C32C38D007F29FC /* ContentActionButtonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonsViewModel.swift; sourceTree = "<group>"; };
+		3B92A1122C32CECB007F29FC /* CoreAudioTypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioTypes.framework; path = System/Library/Frameworks/CoreAudioTypes.framework; sourceTree = SDKROOT; };
 		3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3BDE951A2BBA1599005DDD6A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		3BDE951C2BBA1714005DDD6A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -203,8 +206,8 @@
 		3B92A10A2C32BFF2007F29FC /* Threads */ = {
 			isa = PBXGroup;
 			children = (
-				3BF4681C2BAF471B00184505 /* ThreadCell.swift */,
-				3B92A10C2C32C044007F29FC /* ContentActionButtonsView.swift */,
+				3B92A10E2C32C35C007F29FC /* View */,
+				3B92A10F2C32C364007F29FC /* ViewModel */,
 			);
 			path = Threads;
 			sourceTree = "<group>";
@@ -216,6 +219,23 @@
 				3BFF9DE52BB0AAA000AC007F /* UserCell.swift */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		3B92A10E2C32C35C007F29FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF4681C2BAF471B00184505 /* ThreadCell.swift */,
+				3B92A10C2C32C044007F29FC /* ContentActionButtonsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B92A10F2C32C364007F29FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B92A1102C32C38D007F29FC /* ContentActionButtonsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3BDE95182BBA155D005DDD6A /* ViewModel */ = {
@@ -530,6 +550,7 @@
 		E4F931EF7F58D2D0A1F0EF41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B92A1122C32CECB007F29FC /* CoreAudioTypes.framework */,
 				EC2184E0584BF6ACE0B6B596 /* Pods_ThreadsClone.framework */,
 			);
 			name = Frameworks;
@@ -659,6 +680,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B92A1112C32C38D007F29FC /* ContentActionButtonsViewModel.swift in Sources */,
 				3BF4680B2BAF33F800184505 /* FeedView.swift in Sources */,
 				3B92A0FB2C3192A6007F29FC /* Thread.swift in Sources */,
 				3BDE951B2BBA1599005DDD6A /* RegistrationViewModel.swift in Sources */,

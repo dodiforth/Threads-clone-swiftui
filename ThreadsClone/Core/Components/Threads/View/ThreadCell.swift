@@ -36,7 +36,7 @@ struct ThreadCell: View {
                         .font(.footnote)
                         .multilineTextAlignment(.leading)
                     
-                    ContentActionButtonsView()
+                    ContentActionButtonsView(thread: thread)
                         .foregroundColor(.black)
                         .padding(.vertical, 8)
                 }
