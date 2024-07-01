@@ -29,6 +29,9 @@
 		3B92A1162C32E43B007F29FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1152C32E43B007F29FC /* Constants.swift */; };
 		3B92A11B2C33453B007F29FC /* ThreadReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A11A2C33453B007F29FC /* ThreadReplyView.swift */; };
 		3B92A11D2C33552F007F29FC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A11C2C33552F007F29FC /* String.swift */; };
+		3B92A1202C335DD4007F29FC /* ThreadReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A11F2C335DD4007F29FC /* ThreadReply.swift */; };
+		3B92A1232C3362AD007F29FC /* ThreadReplyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1222C3362AD007F29FC /* ThreadReplyService.swift */; };
+		3B92A1252C336430007F29FC /* ThreadReplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1242C336430007F29FC /* ThreadReplyViewModel.swift */; };
 		3BDE950E2BB9FCDF005DDD6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */; };
 		3BDE95112BB9FE9B005DDD6A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95102BB9FE9B005DDD6A /* FirebaseAuth */; };
 		3BDE95132BB9FE9B005DDD6A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95122BB9FE9B005DDD6A /* FirebaseFirestore */; };
@@ -82,6 +85,9 @@
 		3B92A1152C32E43B007F29FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3B92A11A2C33453B007F29FC /* ThreadReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyView.swift; sourceTree = "<group>"; };
 		3B92A11C2C33552F007F29FC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		3B92A11F2C335DD4007F29FC /* ThreadReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReply.swift; sourceTree = "<group>"; };
+		3B92A1222C3362AD007F29FC /* ThreadReplyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyService.swift; sourceTree = "<group>"; };
+		3B92A1242C336430007F29FC /* ThreadReplyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyViewModel.swift; sourceTree = "<group>"; };
 		3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3BDE951A2BBA1599005DDD6A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		3BDE951C2BBA1714005DDD6A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -247,6 +253,8 @@
 		3B92A1172C3344F0007F29FC /* ThreadReplies */ = {
 			isa = PBXGroup;
 			children = (
+				3B92A1212C336295007F29FC /* Service */,
+				3B92A11E2C335DC4007F29FC /* Model */,
 				3B92A1182C334521007F29FC /* View */,
 				3B92A1192C334524007F29FC /* ViewModel */,
 			);
@@ -264,8 +272,25 @@
 		3B92A1192C334524007F29FC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3B92A1242C336430007F29FC /* ThreadReplyViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B92A11E2C335DC4007F29FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B92A11F2C335DD4007F29FC /* ThreadReply.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B92A1212C336295007F29FC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3B92A1222C3362AD007F29FC /* ThreadReplyService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		3BDE95182BBA155D005DDD6A /* ViewModel */ = {
@@ -723,6 +748,7 @@
 				3B3C0E412C2C87BC0016CA66 /* PreviewProvider.swift in Sources */,
 				3B92A10D2C32C044007F29FC /* ContentActionButtonsView.swift in Sources */,
 				3B92A1092C32A247007F29FC /* Timestamp.swift in Sources */,
+				3B92A1202C335DD4007F29FC /* ThreadReply.swift in Sources */,
 				3B3C0E4E2C2F23E70016CA66 /* EditProfileViewModel.swift in Sources */,
 				3BFF9DED2BB173D000AC007F /* EditProfileView.swift in Sources */,
 				3BF467E52BAD8CBF00184505 /* ContentView.swift in Sources */,
@@ -746,12 +772,14 @@
 				3BF468072BAF2CBB00184505 /* ThreadsTabView.swift in Sources */,
 				3B3C0E452C2C90C10016CA66 /* CurrentUserProfileView.swift in Sources */,
 				3BF468042BAF24DB00184505 /* ThreadsTextFieldModifier.swift in Sources */,
+				3B92A1232C3362AD007F29FC /* ThreadReplyService.swift in Sources */,
 				3BF467E32BAD8CBF00184505 /* ThreadsCloneApp.swift in Sources */,
 				3B3C0E492C2C94BE0016CA66 /* ProfileHeaderView.swift in Sources */,
 				3BF4680F2BAF346D00184505 /* ExploreView.swift in Sources */,
 				3BF4681B2BAF350A00184505 /* ProfileView.swift in Sources */,
 				3BF468012BAF1FA400184505 /* RegistrationView.swift in Sources */,
 				3B3C0E372C2AACD50016CA66 /* User.swift in Sources */,
+				3B92A1252C336430007F29FC /* ThreadReplyViewModel.swift in Sources */,
 				3B92A1002C3198CF007F29FC /* ThreadService.swift in Sources */,
 				3B92A11B2C33453B007F29FC /* ThreadReplyView.swift in Sources */,
 			);

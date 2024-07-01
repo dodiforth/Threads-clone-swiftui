@@ -13,6 +13,7 @@ struct ThreadReplyView: View {
     
     @State private var replyText = ""
     @State private var threadViewHeight: CGFloat = 24 //default value
+    @StateObject var viewModel = ThreadReplyViewModel()
     @Environment(\.dismiss) var dismiss
     
     private var currentUser: User? {
@@ -73,7 +74,7 @@ struct ThreadReplyView: View {
                     }
                 }
                 .padding()
-
+                
                 Spacer()
             }
             .onAppear {
@@ -92,7 +93,10 @@ struct ThreadReplyView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Post") {
-                        dismiss()
+                        Task {
+                            try await viewModel.uploadThreadReply(replyText:thread.caption, thread: thread)
+                            dismiss()
+                        }
                     }
                     .opacity(replyText.isEmpty ? 0.5 : 1.0)
                     .disabled(replyText.isEmpty)
