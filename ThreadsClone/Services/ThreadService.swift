@@ -37,3 +37,30 @@ struct ThreadService {
     }
     
 }
+
+// MARK: - Likes
+
+extension ThreadService {
+    static func likeThread(_ thread: Thread) async throws {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let threadRef = FirestoreConstants.ThreadCollection
+            .document(thread.id)
+        
+        async let _ = try await threadRef
+            .collection("thread-likes")
+            .document(uid)
+            .setData([:])
+        async let _ = try await threadRef
+            .updateData(["likes": thread.likes + 1])
+        async let _ = try await FirestoreConstants.UserCollection.document(uid).collection("user-likes").document(thread.id).setData([:])
+        
+    }
+    
+    static func unlikeThread(_ thread: Thread) async throws {
+        
+    }
+    
+    static func checkIfUserLikedThread(_ thread: Thread) async throws -> Bool {
+        return false
+    }
+}

@@ -19,10 +19,12 @@ struct ContentActionButtonsView: View {
     }
     
     func handleLikeTapped() {
-        if didLike {
-            viewModel.unlikeThread()
-        } else {
-            viewModel.likeThread()
+        Task {
+            if didLike {
+                viewModel.unlikeThread()
+            } else {
+                try await viewModel.likeThread()
+            }
         }
     }
     
