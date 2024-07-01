@@ -10,10 +10,23 @@ import SwiftUI
 struct ThreadReplyView: View {
     
     let thread: Thread
+    
     @State private var replyText = ""
+    @State private var threadViewHeight: CGFloat = 24 //default value
     @Environment(\.dismiss) var dismiss
+    
     private var currentUser: User? {
         return UserService.shared.currentUser
+    }
+    
+    func setThreadViewHeight() {
+        let imageDimension: CGFloat = ProfileImageSize.small.dimension
+        let padding: CGFloat = 16
+        let width = UIScreen.main.bounds.width - imageDimension - padding
+        let font = UIFont.systemFont(ofSize: 14)
+        
+        let captionSize = thread.caption.heightWithContrainedWidth(width, font: font)
+        threadViewHeight = captionSize + imageDimension - 16
     }
     
     var body: some View {
@@ -27,7 +40,7 @@ struct ThreadReplyView: View {
                             CircularProfileImageView(user: thread.user, size: .small)
                             
                             Rectangle()
-                                .frame(width: 2, height: 50)
+                                .frame(width: 2, height: threadViewHeight)
                                 .foregroundColor(Color(.systemGray4))
                         }
                         
@@ -62,6 +75,9 @@ struct ThreadReplyView: View {
                 .padding()
 
                 Spacer()
+            }
+            .onAppear {
+                setThreadViewHeight()
             }
             .navigationTitle("Reply")
             .navigationBarTitleDisplayMode(.inline)
