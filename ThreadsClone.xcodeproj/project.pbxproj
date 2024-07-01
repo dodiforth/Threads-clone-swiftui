@@ -27,6 +27,7 @@
 		3B92A10D2C32C044007F29FC /* ContentActionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A10C2C32C044007F29FC /* ContentActionButtonsView.swift */; };
 		3B92A1112C32C38D007F29FC /* ContentActionButtonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1102C32C38D007F29FC /* ContentActionButtonsViewModel.swift */; };
 		3B92A1162C32E43B007F29FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1152C32E43B007F29FC /* Constants.swift */; };
+		3B92A11B2C33453B007F29FC /* ThreadReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A11A2C33453B007F29FC /* ThreadReplyView.swift */; };
 		3BDE950E2BB9FCDF005DDD6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */; };
 		3BDE95112BB9FE9B005DDD6A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95102BB9FE9B005DDD6A /* FirebaseAuth */; };
 		3BDE95132BB9FE9B005DDD6A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95122BB9FE9B005DDD6A /* FirebaseFirestore */; };
@@ -78,6 +79,7 @@
 		3B92A1102C32C38D007F29FC /* ContentActionButtonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonsViewModel.swift; sourceTree = "<group>"; };
 		3B92A1122C32CECB007F29FC /* CoreAudioTypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioTypes.framework; path = System/Library/Frameworks/CoreAudioTypes.framework; sourceTree = SDKROOT; };
 		3B92A1152C32E43B007F29FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3B92A11A2C33453B007F29FC /* ThreadReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyView.swift; sourceTree = "<group>"; };
 		3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3BDE951A2BBA1599005DDD6A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		3BDE951C2BBA1714005DDD6A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -240,6 +242,30 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		3B92A1172C3344F0007F29FC /* ThreadReplies */ = {
+			isa = PBXGroup;
+			children = (
+				3B92A1182C334521007F29FC /* View */,
+				3B92A1192C334524007F29FC /* ViewModel */,
+			);
+			path = ThreadReplies;
+			sourceTree = "<group>";
+		};
+		3B92A1182C334521007F29FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B92A11A2C33453B007F29FC /* ThreadReplyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B92A1192C334524007F29FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3BDE95182BBA155D005DDD6A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,13 +354,14 @@
 			children = (
 				3BF468142BAF34D500184505 /* Activity */,
 				3BF467FB2BAE056800184505 /* Authentication */,
-				3BFF9DE22BB0A8FF00AC007F /* Components */,
 				3BF4680C2BAF345900184505 /* Explore */,
 				3BF468082BAF33E400184505 /* Feed */,
 				3BF468182BAF34FB00184505 /* Profile */,
 				3BF467FC2BAE057400184505 /* Root */,
 				3BF468052BAF2C8100184505 /* TabBar */,
+				3BFF9DE22BB0A8FF00AC007F /* Components */,
 				3BF468102BAF349A00184505 /* ThreadCreation */,
+				3B92A1172C3344F0007F29FC /* ThreadReplies */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -722,6 +749,7 @@
 				3BF468012BAF1FA400184505 /* RegistrationView.swift in Sources */,
 				3B3C0E372C2AACD50016CA66 /* User.swift in Sources */,
 				3B92A1002C3198CF007F29FC /* ThreadService.swift in Sources */,
+				3B92A11B2C33453B007F29FC /* ThreadReplyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
