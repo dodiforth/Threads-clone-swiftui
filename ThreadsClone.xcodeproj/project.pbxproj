@@ -32,6 +32,9 @@
 		3B92A1202C335DD4007F29FC /* ThreadReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A11F2C335DD4007F29FC /* ThreadReply.swift */; };
 		3B92A1232C3362AD007F29FC /* ThreadReplyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1222C3362AD007F29FC /* ThreadReplyService.swift */; };
 		3B92A1252C336430007F29FC /* ThreadReplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1242C336430007F29FC /* ThreadReplyViewModel.swift */; };
+		3B92A12A2C345A24007F29FC /* ThreadDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1292C345A24007F29FC /* ThreadDetailsView.swift */; };
+		3B92A12C2C346209007F29FC /* ThreadDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A12B2C346209007F29FC /* ThreadDetailsViewModel.swift */; };
+		3B92A12E2C346633007F29FC /* ThreadReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A12D2C346633007F29FC /* ThreadReplyCell.swift */; };
 		3BDE950E2BB9FCDF005DDD6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */; };
 		3BDE95112BB9FE9B005DDD6A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95102BB9FE9B005DDD6A /* FirebaseAuth */; };
 		3BDE95132BB9FE9B005DDD6A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95122BB9FE9B005DDD6A /* FirebaseFirestore */; };
@@ -88,6 +91,9 @@
 		3B92A11F2C335DD4007F29FC /* ThreadReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReply.swift; sourceTree = "<group>"; };
 		3B92A1222C3362AD007F29FC /* ThreadReplyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyService.swift; sourceTree = "<group>"; };
 		3B92A1242C336430007F29FC /* ThreadReplyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyViewModel.swift; sourceTree = "<group>"; };
+		3B92A1292C345A24007F29FC /* ThreadDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadDetailsView.swift; sourceTree = "<group>"; };
+		3B92A12B2C346209007F29FC /* ThreadDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadDetailsViewModel.swift; sourceTree = "<group>"; };
+		3B92A12D2C346633007F29FC /* ThreadReplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyCell.swift; sourceTree = "<group>"; };
 		3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3BDE951A2BBA1599005DDD6A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		3BDE951C2BBA1714005DDD6A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -265,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				3B92A11A2C33453B007F29FC /* ThreadReplyView.swift */,
+				3B92A12D2C346633007F29FC /* ThreadReplyCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +298,31 @@
 				3B92A1222C3362AD007F29FC /* ThreadReplyService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		3B92A1262C3459F9007F29FC /* ThreadDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3B92A1282C345A15007F29FC /* View */,
+				3B92A1272C345A10007F29FC /* ViewModel */,
+			);
+			path = ThreadDetails;
+			sourceTree = "<group>";
+		};
+		3B92A1272C345A10007F29FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B92A12B2C346209007F29FC /* ThreadDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B92A1282C345A15007F29FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B92A1292C345A24007F29FC /* ThreadDetailsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3BDE95182BBA155D005DDD6A /* ViewModel */ = {
@@ -381,13 +413,14 @@
 			children = (
 				3BF468142BAF34D500184505 /* Activity */,
 				3BF467FB2BAE056800184505 /* Authentication */,
+				3BFF9DE22BB0A8FF00AC007F /* Components */,
 				3BF4680C2BAF345900184505 /* Explore */,
 				3BF468082BAF33E400184505 /* Feed */,
 				3BF468182BAF34FB00184505 /* Profile */,
 				3BF467FC2BAE057400184505 /* Root */,
 				3BF468052BAF2C8100184505 /* TabBar */,
-				3BFF9DE22BB0A8FF00AC007F /* Components */,
 				3BF468102BAF349A00184505 /* ThreadCreation */,
+				3B92A1262C3459F9007F29FC /* ThreadDetails */,
 				3B92A1172C3344F0007F29FC /* ThreadReplies */,
 			);
 			path = Core;
@@ -745,12 +778,14 @@
 				3BDE951B2BBA1599005DDD6A /* RegistrationViewModel.swift in Sources */,
 				3BF467FF2BAE05B700184505 /* LoginView.swift in Sources */,
 				3BDE951D2BBA1714005DDD6A /* AuthService.swift in Sources */,
+				3B92A12E2C346633007F29FC /* ThreadReplyCell.swift in Sources */,
 				3B3C0E412C2C87BC0016CA66 /* PreviewProvider.swift in Sources */,
 				3B92A10D2C32C044007F29FC /* ContentActionButtonsView.swift in Sources */,
 				3B92A1092C32A247007F29FC /* Timestamp.swift in Sources */,
 				3B92A1202C335DD4007F29FC /* ThreadReply.swift in Sources */,
 				3B3C0E4E2C2F23E70016CA66 /* EditProfileViewModel.swift in Sources */,
 				3BFF9DED2BB173D000AC007F /* EditProfileView.swift in Sources */,
+				3B92A12C2C346209007F29FC /* ThreadDetailsViewModel.swift in Sources */,
 				3BF467E52BAD8CBF00184505 /* ContentView.swift in Sources */,
 				3B3C0E392C2AB3940016CA66 /* UserService.swift in Sources */,
 				3BF4681D2BAF471B00184505 /* ThreadCell.swift in Sources */,
@@ -776,6 +811,7 @@
 				3BF467E32BAD8CBF00184505 /* ThreadsCloneApp.swift in Sources */,
 				3B3C0E492C2C94BE0016CA66 /* ProfileHeaderView.swift in Sources */,
 				3BF4680F2BAF346D00184505 /* ExploreView.swift in Sources */,
+				3B92A12A2C345A24007F29FC /* ThreadDetailsView.swift in Sources */,
 				3BF4681B2BAF350A00184505 /* ProfileView.swift in Sources */,
 				3BF468012BAF1FA400184505 /* RegistrationView.swift in Sources */,
 				3B3C0E372C2AACD50016CA66 /* User.swift in Sources */,

@@ -8,7 +8,7 @@
 import Firebase
 import FirebaseFirestoreSwift
 
-struct Thread: Identifiable, Codable {
+struct Thread: Identifiable, Hashable, Codable {
     @DocumentID var threadId: String?
     let ownerUid: String
     let caption: String
