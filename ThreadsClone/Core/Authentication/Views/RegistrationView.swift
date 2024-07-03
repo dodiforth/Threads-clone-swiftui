@@ -48,7 +48,7 @@ struct RegistrationView: View {
                 Text("Sign up")
                     .fontWeight(.semibold)
                     .frame(width: signUpButtonWidth,height: signUpButtonHeight)
-                    .background(Color(.systemGray))
+                    .background(Color(.black))
                     .foregroundColor(.white)
                     .cornerRadius(8)
             }
