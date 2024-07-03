@@ -27,7 +27,7 @@ class ThreadDetailsViewModel: ObservableObject {
         for i in 0 ..< replies.count {
             let reply = replies[i]
             
-            async let user = try await UserService.fetchUser(withUid: reply.threadOwneruid)
+            async let user = try await UserService.fetchUser(withUid: reply.threadReplyOwnerUid)
             self.replies[i].replyUser = try await user
         }
     }

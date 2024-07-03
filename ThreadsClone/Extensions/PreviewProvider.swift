@@ -24,7 +24,8 @@ class DeveloperPreview {
         caption: "This is a text thread",
         timestamp: Timestamp(),
         likes: 37,
-        replyCount: 5
+        replyCount: 5,
+        user: user
     )
     
     lazy var reply = ThreadReply(

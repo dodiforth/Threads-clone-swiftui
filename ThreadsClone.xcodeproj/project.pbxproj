@@ -35,6 +35,7 @@
 		3B92A12A2C345A24007F29FC /* ThreadDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A1292C345A24007F29FC /* ThreadDetailsView.swift */; };
 		3B92A12C2C346209007F29FC /* ThreadDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A12B2C346209007F29FC /* ThreadDetailsViewModel.swift */; };
 		3B92A12E2C346633007F29FC /* ThreadReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A12D2C346633007F29FC /* ThreadReplyCell.swift */; };
+		3B92A1302C346C51007F29FC /* ThreadReplyProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A12F2C346C51007F29FC /* ThreadReplyProfileCell.swift */; };
 		3BDE950E2BB9FCDF005DDD6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */; };
 		3BDE95112BB9FE9B005DDD6A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95102BB9FE9B005DDD6A /* FirebaseAuth */; };
 		3BDE95132BB9FE9B005DDD6A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDE95122BB9FE9B005DDD6A /* FirebaseFirestore */; };
@@ -94,6 +95,7 @@
 		3B92A1292C345A24007F29FC /* ThreadDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadDetailsView.swift; sourceTree = "<group>"; };
 		3B92A12B2C346209007F29FC /* ThreadDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadDetailsViewModel.swift; sourceTree = "<group>"; };
 		3B92A12D2C346633007F29FC /* ThreadReplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyCell.swift; sourceTree = "<group>"; };
+		3B92A12F2C346C51007F29FC /* ThreadReplyProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyProfileCell.swift; sourceTree = "<group>"; };
 		3BDE950D2BB9FCDF005DDD6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3BDE951A2BBA1599005DDD6A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		3BDE951C2BBA1714005DDD6A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				3B3C0E482C2C94BE0016CA66 /* ProfileHeaderView.swift */,
 				3B3C0E4A2C2C98BC0016CA66 /* UserContentListView.swift */,
+				3B92A12F2C346C51007F29FC /* ThreadReplyProfileCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -815,6 +818,7 @@
 				3BF4681B2BAF350A00184505 /* ProfileView.swift in Sources */,
 				3BF468012BAF1FA400184505 /* RegistrationView.swift in Sources */,
 				3B3C0E372C2AACD50016CA66 /* User.swift in Sources */,
+				3B92A1302C346C51007F29FC /* ThreadReplyProfileCell.swift in Sources */,
 				3B92A1252C336430007F29FC /* ThreadReplyViewModel.swift in Sources */,
 				3B92A1002C3198CF007F29FC /* ThreadService.swift in Sources */,
 				3B92A11B2C33453B007F29FC /* ThreadReplyView.swift in Sources */,

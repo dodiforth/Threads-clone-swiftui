@@ -36,6 +36,28 @@ struct ThreadService {
         return threads.sorted(by: { $0.timestamp.dateValue() > $1.timestamp.dateValue() })
     }
     
+    static func fetchThreadReplies(forUser user: User) async throws -> [ThreadReply] {
+        let snapshot = try await FirestoreConstants.RepliesCollection
+            .whereField("threadReplyOwnerUid", isEqualTo: user.id)
+            .getDocuments()
+        
+        var replies = snapshot.documents.compactMap { try? $0.data(as: ThreadReply.self) }
+        
+        for i in 0 ..< replies.count {
+            replies[i].replyUser = user
+        }
+        
+        return replies
+    }
+    
+    static func fetchThreads(threadId: String) async throws -> Thread {
+        let snapshot  = try await FirestoreConstants.ThreadCollection
+            .document(threadId)
+            .getDocument()
+        
+        return try snapshot.data(as: Thread.self)
+    }
+    
 }
 
 // MARK: - Likes

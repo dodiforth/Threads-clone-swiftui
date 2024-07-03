@@ -94,7 +94,7 @@ struct ThreadReplyView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Post") {
                         Task {
-                            try await viewModel.uploadThreadReply(replyText:thread.caption, thread: thread)
+                            try await viewModel.uploadThreadReply(replyText: replyText, thread: thread)
                             dismiss()
                         }
                     }
