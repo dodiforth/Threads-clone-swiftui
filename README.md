@@ -7,14 +7,13 @@
   <a href="#introduction">Introduction</a> •
   <a href="#features">Features</a> •
   <a href="#prerequisites">Prerequisites</a> •
-  <a href="#installation">Installation</a> •
   <a href="#technologiesused">Technologies Used</a> •
   <a href="#contributing">Contributing</a> •
   <a href="#license">License</a>
 </p>
 
 <p align="center">
-  <img src="https://github.com/garretthanberg/Threads-Clone/assets/115447682/3ba4d8da-ac25-4ea0-9050-8785e8ef6680" alt="screenshot">
+![recording01-ezgif com-video-to-gif-converter](https://github.com/dodiforth/Threads-clone-swiftui/assets/50798761/918d6245-8b08-4d76-bf76-0f8067f8096c)
 </p>
 
 ## Introduction
@@ -31,7 +30,7 @@ This Threads Clone project is not affiliated with or endorsed by Threads or any 
 - Real-time Updates: Enjoy real-time updates when new threads or posts are created.
 
 <p align="center">
-  <img src="https://github.com/garretthanberg/Threads-Clone/assets/115447682/6a086caa-d409-4d23-bcf6-3bc7815699f6" alt="screenshot">
+  ![recording02-ezgif com-video-to-gif-converter](https://github.com/dodiforth/Threads-clone-swiftui/assets/50798761/c2440932-19cd-47ac-af61-05d8a89527de)
 </p>
 
 <a id="prerequisites"></a>
@@ -43,36 +42,8 @@ Before you proceed, make sure you have the following tools and technologies inst
     Xcode (https://nodejs.org](https://developer.apple.com/xcode/resources/)
     Firebase account for authentication, image storage, and database setup (https://firebase.google.com)
 
-## Installation
-
-To run the Threads Clone on your local machine, follow these steps:
-
-```bash
-# Clone this repository:
-$ git clone https://github.com/garretthanberg/Threads-Clone.git
-
-
-# Go into the repository:
-$ cd Threads-Clone
-
-
-# Open the Threads Clone.xcodeproj file with Xcode.
-
-
-# Install dependencies in Xcode:
-$ firebase-ios-sdk
-$ Kingfisher
-
-
-# Create a Firebase project and set up the necessary configurations (Authentication, Storage and Firestore).
-# Replace the Firebase config in GoogleService-info.plist with your credentials.
-
-
-# Run the app on Xcode
-```
-
 <p align="center">
-  <img src="https://github.com/garretthanberg/Threads-Clone/assets/115447682/3629ebaf-5b25-4c88-997c-265be232978d" alt="screenshot">
+  ![recording03-ezgif com-video-to-gif-converter](https://github.com/dodiforth/Threads-clone-swiftui/assets/50798761/68266068-3743-4c19-a488-aa56bf30dc53)
 </p>
 
 <a id="technologiesused"></a>
@@ -103,7 +74,3 @@ This project is licensed under the MIT License.
 ---
 
 I hope you enjoy using my Threads Clone! If you have any questions or need assistance, feel free to contact me.
-
-> Portfolio [garretthanberg.com](https://www.garretthanberg.com) &nbsp;&middot;&nbsp;
-> GitHub [@garretthanberg](https://github.com/garretthanberg) &nbsp;&middot;&nbsp;
-> LinkedIn [Garrett Hanberg](https://www.linkedin.com/in/garrett-hanberg/)
