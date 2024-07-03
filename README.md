@@ -12,9 +12,7 @@
   <a href="#license">License</a>
 </p>
 
-<p align="center">
 ![recording01-ezgif com-video-to-gif-converter](https://github.com/dodiforth/Threads-clone-swiftui/assets/50798761/918d6245-8b08-4d76-bf76-0f8067f8096c)
-</p>
 
 ## Introduction
 
@@ -29,9 +27,7 @@ This Threads Clone project is not affiliated with or endorsed by Threads or any 
 - User Profiles: View user profiles and see their activity history.
 - Real-time Updates: Enjoy real-time updates when new threads or posts are created.
 
-<p align="center">
   ![recording02-ezgif com-video-to-gif-converter](https://github.com/dodiforth/Threads-clone-swiftui/assets/50798761/c2440932-19cd-47ac-af61-05d8a89527de)
-</p>
 
 <a id="prerequisites"></a>
 
@@ -42,9 +38,7 @@ Before you proceed, make sure you have the following tools and technologies inst
     Xcode (https://nodejs.org](https://developer.apple.com/xcode/resources/)
     Firebase account for authentication, image storage, and database setup (https://firebase.google.com)
 
-<p align="center">
-  ![recording03-ezgif com-video-to-gif-converter](https://github.com/dodiforth/Threads-clone-swiftui/assets/50798761/68266068-3743-4c19-a488-aa56bf30dc53)
-</p>
+![recording03-ezgif com-video-to-gif-converter](https://github.com/dodiforth/Threads-clone-swiftui/assets/50798761/68266068-3743-4c19-a488-aa56bf30dc53)
 
 <a id="technologiesused"></a>
 
